@@ -7,8 +7,6 @@ const output = document.getElementById('output');
 let isError = false;
 
 function cleanInputString(str) {
-    console.log("original string: ", str);
-    console.log(cleanInputString("+-99"));
-  const regex = /[+-\s]/g;
-  return str.replace(regex,"");
+    const regex = /[+-\s]/g;
+  return str.replace(regex, '');
 }
