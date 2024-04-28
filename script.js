@@ -34,8 +34,9 @@ function addEntry() {
 
 function getCaloriesFromInputs(list) {
   let calories = 0;
+  
   for (const item of list) {
-    console.log(item);
+    const currVal = item.value;
   }
 }
 addEntryButton.addEventListener('beforeend', HTMLString);
