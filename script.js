@@ -32,4 +32,4 @@ function addEntry() {
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
-addEntryButton.addEventListener();
+addEntryButton.addEventListener('beforeend', HTMLString);
