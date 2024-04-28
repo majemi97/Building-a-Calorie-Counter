@@ -29,7 +29,7 @@ function addEntry() {
     id="${entryDropdown.value}-${entryNumber}-calories"
     placeholder="Calories"
   />`;
-  targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
+  targetInputContainer.insertAdjacentHTML('beforeend', HTMLString);
 }
 
 function getCaloriesFromInputs(list) {
@@ -38,10 +38,12 @@ function getCaloriesFromInputs(list) {
   for (const item of list) {
     const currVal = cleanInputString(item.value);
     const invalidInputMatch = isInvalidInput(currVal);
+
     if (invalidInputMatch) {
-      true;
+      alert(`Invalid Input: ${invalidInputMatch[0]}`);
+
     }
   }
 }
 
-addEntryButton.addEventListener('beforeend', HTMLString);
+addEntryButton.addEventListener("click", addEntry);
